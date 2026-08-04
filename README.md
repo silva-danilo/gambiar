@@ -1,2 +1,2 @@
 # gambiar: gambiarras for GAMs by R
-Functions for some tricks and plots in GAMs.
+Functions for some tricks, plots, and reminders in GAMs.
