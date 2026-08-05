@@ -2,7 +2,7 @@
 library(mgcv)
 
 # prep
-n <- 2000
+n <- 600
 
 # simu
 set.seed(13)
