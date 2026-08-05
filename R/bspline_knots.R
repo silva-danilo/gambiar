@@ -4,7 +4,7 @@ library(splines)
 # data
 dat <- mtcars
 
-# wood code (with repeated knots)
+# wood bspline (with repeated knots)
 bspline <- function(x, knots, i, m=2){ 
   # base
   if(m==-1){
@@ -24,7 +24,7 @@ bspline <- function(x, knots, i, m=2){
   res
 }
 
-# knot
+# knots
 m <- 2
 k <- 9
 nknots <- (k + 1) + (m + 2)
