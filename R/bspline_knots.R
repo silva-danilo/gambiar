@@ -35,8 +35,8 @@ min <- min - delta*0.001
 max <- max + delta*0.001
 h <- (max - min)/(nknots - 2*(m + 1) - 1)
 knots <- seq(min-3*h, max+3*h, length.out=nknots)
-knots[knots %in% head(knots, m+1)] <- min # crime
-knots[knots %in% tail(knots, m+1)] <- max # crime
+# knots[knots %in% head(knots, m+1)] <- min # crime
+# knots[knots %in% tail(knots, m+1)] <- max # crime
 
 # craft
 B_craft <- matrix(NA, nrow(dat), (k + 1))
