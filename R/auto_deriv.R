@@ -1,4 +1,4 @@
-# packages
+# packs
 library(mgcv)
 
 # prep
@@ -32,7 +32,7 @@ summary(b1)
 # f1_coef <- coef(b1)[ini:fin]
 # f1_pred <- B%*%f1_coef
 f1_pred <- predict(b1, type="terms")[,2]
-  
+
 # prep
 par(mar=c(4.5,5.5,1,1), mfrow=c(1,3), cex.lab=2, cex.axis=1.7, pch=19)
 
@@ -51,5 +51,6 @@ df1_pred <- predict(db1, type="terms")[,2]
 par(mar=c(4.5,5.5,1,1), mfrow=c(1,3), cex.lab=2, cex.axis=1.7, pch=19)
 
 # plot
-plot(df1_pred~dat$u1, ylim=c(-0.6,1.6))
-plot(dat$df1~dat$u1, ylim=c(-0.6,1.6))
+ylim <- c(-0.6,1.6)
+plot(df1_pred~dat$u1, ylim=ylim)
+plot(dat$df1~dat$u1, ylim=ylim)
